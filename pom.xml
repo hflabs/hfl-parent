@@ -10,11 +10,11 @@
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
 
-    <packaging>pom</packaging>
-
     <prerequisites>
         <maven>3.0</maven>
     </prerequisites>
+
+    <packaging>pom</packaging>
 
     <organization>
         <name>Human Factor Labs</name>
@@ -32,9 +32,9 @@
     </licenses>
 
     <scm>
-        <url>${project.scm.url}</url>
-        <connection>scm:${project.scm.type}:${project.scm.url}</connection>
-        <developerConnection>scm:${project.scm.type}:${project.scm.url}</developerConnection>
+        <url>${project.scm.path}</url>
+        <connection>scm:${project.scm.type}:${project.scm.path}</connection>
+        <developerConnection>scm:${project.scm.type}:${project.scm.path}</developerConnection>
     </scm>
 
     <properties>
@@ -43,7 +43,8 @@
         <!-- ############################################################################ -->
         <project.organization.email>info@hflabs.ru</project.organization.email>
         <project.scm.type>git</project.scm.type>
-        <project.scm.url>https://github.com/hflabs/hfl-parent-pom.git</project.scm.url>
+        <project.scm.path>https://github.com/hflabs/hfl-parent-pom.git</project.scm.path>
+        <project.scm.revision>${changeSet}</project.scm.revision>
 
         <!-- ############################################################################ -->
         <!-- Build properties -->
@@ -61,7 +62,7 @@
         <manifestEntry.Implementation-Title>${project.name}</manifestEntry.Implementation-Title>
         <manifestEntry.Implementation-Vendor>${project.organization.name}</manifestEntry.Implementation-Vendor>
         <manifestEntry.Implementation-Vendor-Id>${project.groupId}</manifestEntry.Implementation-Vendor-Id>
-        <manifestEntry.Implementation-Version>${project.version} (${changeSet})</manifestEntry.Implementation-Version>
+        <manifestEntry.Implementation-Version>${project.version} (${project.scm.revision})</manifestEntry.Implementation-Version>
 
         <!-- ############################################################################ -->
         <!-- Maven properties -->
@@ -218,6 +219,7 @@
                     <version>1.2</version>
                     <configuration>
                         <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
+                        <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
                     </configuration>
                 </plugin>
 
