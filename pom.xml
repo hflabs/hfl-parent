@@ -10,10 +10,6 @@
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
 
-    <prerequisites>
-        <maven>3.0</maven>
-    </prerequisites>
-
     <packaging>pom</packaging>
 
     <organization>
