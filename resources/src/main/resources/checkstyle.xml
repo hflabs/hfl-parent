@@ -10,6 +10,8 @@
         <property name="severity" value="error"/>
     </module>
     <module name="TreeWalker">
+        <!-- Required for SuppressionCommentFilter below -->
+        <module name="FileContentsHolder"/>
         <property name="tabWidth" value="1"/>
         <module name="AvoidStarImport">
             <property name="severity" value="error"/>
@@ -168,5 +170,9 @@
         <module name="WhitespaceAfter">
             <property name="severity" value="error"/>
         </module>
+    </module>
+    <module name="SuppressionCommentFilter">
+        <property name="offCommentFormat" value="GEN-BEGIN\:"/>
+        <property name="onCommentFormat" value="GEN-END\:"/>
     </module>
 </module>
