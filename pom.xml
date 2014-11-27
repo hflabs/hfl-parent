@@ -48,6 +48,7 @@
         <j2se.version>1.7</j2se.version>
         <j2se.debug>true</j2se.debug>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.build.version>3.0</maven.build.version>
         <maven.build.timestamp.format>yyyy-MM-dd_HH.mm.ss</maven.build.timestamp.format>
         <maven.build.settingsFile>${user.home}/.m2/settings.xml</maven.build.settingsFile>
 
@@ -237,7 +238,7 @@
                             <configuration>
                                 <rules>
                                     <requireMavenVersion>
-                                        <version>[3.2.3,)</version>
+                                        <version>[${maven.build.version},)</version>
                                     </requireMavenVersion>
                                     <requireJavaVersion>
                                         <version>[${j2se.version},)</version>
