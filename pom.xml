@@ -165,14 +165,14 @@
         <cxf.version>2.7.13</cxf.version>
         <cxf-xjc.version>2.7.0</cxf-xjc.version>
         <lucene.version>4.10.2</lucene.version>
-        <jackson.version>2.4.3</jackson.version>
+        <jackson.version>2.4.4</jackson.version>
         <dozer.version>5.5.1</dozer.version>
 
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
         <!-- ############################################################################ -->
         <mvel2.version>2.2.2.Final</mvel2.version>
-        <aspectj.version>1.7.4</aspectj.version>
+        <aspectj.version>1.8.4</aspectj.version>
         <cglib.version>3.1</cglib.version>
 
         <!-- ############################################################################ -->
