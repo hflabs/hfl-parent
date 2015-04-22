@@ -210,6 +210,7 @@
         <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
         <javax.servlet-jstl.version>1.2</javax.servlet-jstl.version>
         <javax.servlet-jsp.version>2.0</javax.servlet-jsp.version>
+        <javax.cache-api.version>1.0.0</javax.cache-api.version>
 
     </properties>
 
@@ -854,6 +855,12 @@
             <version>${javax.servlet-jstl.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>${javax.cache-api.version}</version>
+            <scope>provided</scope>
+         </dependency>
 
     </dependencies>
 
