@@ -156,7 +156,7 @@
         <!-- Libraries versions -->
         <!-- ############################################################################ -->
         <trove.version>3.0.3</trove.version>
-        <mapdb.version>1.0.6</mapdb.version>
+        <mapdb.version>1.0.7</mapdb.version>
         <guava.version>18.0</guava.version>
 
         <kryo.version>2.22</kryo.version>
