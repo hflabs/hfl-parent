@@ -166,7 +166,7 @@
         <cxf.version>2.7.14</cxf.version>
         <cxf-xjc.version>2.7.0</cxf-xjc.version>
         <lucene.version>4.10.2</lucene.version>
-        <jackson.version>2.4.4</jackson.version>
+        <jackson.version>2.5.3</jackson.version>
         <dozer.version>5.5.1</dozer.version>
 
         <!-- ############################################################################ -->
