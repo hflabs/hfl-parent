@@ -844,12 +844,6 @@
             <version>${javax.servlet-jstl.version}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>javax.cache</groupId>
-            <artifactId>cache-api</artifactId>
-            <version>${javax.cache-api.version}</version>
-            <scope>provided</scope>
-         </dependency>
 
     </dependencies>
 
