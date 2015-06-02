@@ -203,6 +203,7 @@
         <!-- ############################################################################ -->
         <!-- Java specifications libraries version -->
         <!-- ############################################################################ -->
+        <javax.activation.version>1.1.1</javax.activation.version>
         <javax.annotation-api.version>1.2</javax.annotation-api.version>
         <javax.connector-api.version>1.0</javax.connector-api.version>
         <javax.validation-api.version>1.0.0.GA</javax.validation-api.version>
@@ -210,7 +211,7 @@
         <javax.persistence-api.version>1.0.2</javax.persistence-api.version>
         <javax.jms-api.version>1.1-rev-1</javax.jms-api.version>
         <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
-        <javax.mail-api.version>1.4.7</javax.mail-api.version>
+        <javax.mail-api.version>1.5.3</javax.mail-api.version>
         <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
         <javax.servlet-jstl.version>1.2</javax.servlet-jstl.version>
         <javax.servlet-jsp.version>2.0</javax.servlet-jsp.version>
@@ -761,6 +762,12 @@
 
         <!-- Java specifications -->
         <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>${javax.activation.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
             <version>${javax.annotation-api.version}</version>
@@ -803,8 +810,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>javax.mail-api</artifactId>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
             <version>${javax.mail-api.version}</version>
             <exclusions>
                 <exclusion>
