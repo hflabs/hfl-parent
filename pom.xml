@@ -70,6 +70,8 @@
         <maven.repo.releases>${maven.repo}/libs-releases-${maven.repo.access}/</maven.repo.releases>
         <maven.repo.snapshots.id>hflabs-snapshots</maven.repo.snapshots.id>
         <maven.repo.snapshots>${maven.repo}/libs-snapshots-${maven.repo.access}/</maven.repo.snapshots>
+        <maven.repo.snapshots.local>${maven.repo}/libs-snapshots-local/</maven.repo.snapshots.local>
+        <maven.repo.snapshots.public>${maven.repo}/libs-snapshots-public/</maven.repo.snapshots.public>
 
         <skipTests>false</skipTests>
         <maven.test.skip>${skipTests}</maven.test.skip>
