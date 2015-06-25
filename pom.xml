@@ -173,6 +173,7 @@
         <lucene.version>4.10.4</lucene.version>
         <jackson.version>2.5.3</jackson.version>
         <dozer.version>5.5.1</dozer.version>
+        <hazelcast.version>3.5</hazelcast.version>
 
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
