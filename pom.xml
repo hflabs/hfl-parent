@@ -169,6 +169,7 @@
         <ant.version>1.9.4</ant.version>
         <cxf.version>3.1.0</cxf.version>
         <cxf-xjc.version>3.0.3</cxf-xjc.version>
+        <jaxb2.version>0.9.4</jaxb2.version>
         <poi.version>3.11</poi.version>
         <lucene.version>4.10.4</lucene.version>
         <jackson.version>2.5.3</jackson.version>
