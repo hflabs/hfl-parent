@@ -5,7 +5,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>11.0-SNAPSHOT</version>
+    <version>12.0-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -45,7 +45,7 @@
         <!-- ############################################################################ -->
         <!-- Build properties -->
         <!-- ############################################################################ -->
-        <j2se.version>1.7</j2se.version>
+        <j2se.version>1.8</j2se.version>
         <j2se.debug>true</j2se.debug>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.version>3.0</maven.build.version>
@@ -82,7 +82,7 @@
         <!-- ############################################################################ -->
         <!-- Common libraries versions -->
         <!-- ############################################################################ -->
-        <lombok.version>1.16.4</lombok.version>
+        <lombok.version>1.16.6</lombok.version>
         <slf4j.version>1.7.12</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
 
@@ -174,7 +174,7 @@
         <lucene.version>4.10.4</lucene.version>
         <jackson.version>2.5.3</jackson.version>
         <dozer.version>5.5.1</dozer.version>
-        <hazelcast.version>3.5</hazelcast.version>
+        <hazelcast.version>3.5.2</hazelcast.version>
 
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
@@ -508,7 +508,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>11.0-SNAPSHOT</version>
+                            <version>12.0-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
