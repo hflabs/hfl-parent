@@ -189,6 +189,7 @@
         <!-- ############################################################################ -->
         <springframework.version>4.1.6.RELEASE</springframework.version>
         <spring-security.version>4.0.1.RELEASE</spring-security.version>
+        <spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 
         <!-- ############################################################################ -->
         <!-- Apache commons libraries version -->
