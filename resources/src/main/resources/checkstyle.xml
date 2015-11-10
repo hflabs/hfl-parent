@@ -54,6 +54,7 @@
             <property name="severity" value="error"/>
             <property name="ignoreConstructorParameter" value="true"/>
             <property name="ignoreSetter" value="true"/>
+            <property name="setterCanReturnItsClass" value="true"/>
         </module>
         <module name="HideUtilityClassConstructor">
             <property name="severity" value="error"/>
@@ -84,6 +85,7 @@
         </module>
         <module name="JavadocVariable">
             <property name="severity" value="warning"/>
+            <property name="scope" value="public"/>
         </module>
         <module name="LeftCurly">
             <property name="severity" value="error"/>
@@ -91,18 +93,13 @@
         </module>
         <module name="LineLength">
             <property name="severity" value="warning"/>
-            <property name="max" value="150"/>
+            <property name="max" value="200"/>
         </module>
         <module name="LocalFinalVariableName">
             <property name="severity" value="error"/>
         </module>
         <module name="LocalVariableName">
             <property name="severity" value="error"/>
-        </module>
-        <module name="MagicNumber">
-            <property name="severity" value="info"/>
-            <property name="ignoreHashCodeMethod" value="true"/>
-            <property name="ignoreAnnotation" value="false"/>
         </module>
         <module name="MemberName">
             <property name="severity" value="error"/>
