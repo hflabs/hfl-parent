@@ -189,6 +189,7 @@
         <!-- ############################################################################ -->
         <springframework.version>4.1.8.RELEASE</springframework.version>
         <spring-security.version>4.0.2.RELEASE</spring-security.version>
+        <spring-kerberos.version>1.0.1.RELEASE</spring-kerberos.version>
         <spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 
         <!-- ############################################################################ -->
