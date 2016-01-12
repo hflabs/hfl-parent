@@ -140,7 +140,7 @@
 
         <postgresql.groupId>org.postgresql</postgresql.groupId>
         <postgresql.artifactId>postgresql</postgresql.artifactId>
-        <postgresql.version>9.4-1201-jdbc41</postgresql.version>
+        <postgresql.version>9.4.1207.jre7</postgresql.version>
         <postgresql.driverClassName>org.postgresql.Driver</postgresql.driverClassName>
         <postgresql.validateQuery>SELECT 1</postgresql.validateQuery>
 
