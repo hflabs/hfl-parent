@@ -132,7 +132,7 @@
         <!-- ############################################################################ -->
         <!-- Mappings & parsers versions -->
         <!-- ############################################################################ -->
-        <jackson.version>2.6.3</jackson.version>
+        <jackson.version>2.6.7</jackson.version>
         <poi.version>3.11</poi.version>
         <super-csv.version>2.3.1</super-csv.version>
         <snakeyaml.version>1.16</snakeyaml.version>
