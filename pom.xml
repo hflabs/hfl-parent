@@ -147,6 +147,7 @@
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
         <!-- ############################################################################ -->
+        <hikari.version>2.5.1</hikari.version>
         <flyway.version>1.7</flyway.version>
 
         <oracle.groupId>com.oracle</oracle.groupId>
