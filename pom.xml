@@ -231,7 +231,7 @@
         <!-- ############################################################################ -->
         <!-- Distributed collections versions -->
         <!-- ############################################################################ -->
-        <lucene.version>5.3.1</lucene.version>
+        <lucene.version>6.2.1</lucene.version>
         <hazelcast.version>3.7.2</hazelcast.version>
         <infinispan.version>8.2.4.Final</infinispan.version>
 
@@ -745,6 +745,16 @@
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons-collections.version}</version>
             </dependency>
 
             <!-- Spring libraries -->
