@@ -75,6 +75,8 @@
 
         <skipTests>false</skipTests>
         <maven.test.skip>${skipTests}</maven.test.skip>
+        <maven.test.debug>n</maven.test.debug>
+        <maven.test.jpda>5010</maven.test.jpda>
         <maven.checkstyle.skip>true</maven.checkstyle.skip>
         <maven.war.exploded.extension>exploded.war</maven.war.exploded.extension>
         <maven.war.exploded>${project.build.finalName}_${maven.war.exploded.extension}</maven.war.exploded>
@@ -539,6 +541,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.19.1</version>
                     <configuration>
+                        <argLine>-agentlib:jdwp=transport=dt_socket,server=y,suspend=${maven.test.debug},address=${maven.test.jpda}</argLine>
                         <skipTests>${maven.test.skip}</skipTests>
                         <trimStackTrace>false</trimStackTrace>
                     </configuration>
@@ -549,6 +552,7 @@
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <version>2.19.1</version>
                     <configuration>
+                        <argLine>-agentlib:jdwp=transport=dt_socket,server=y,suspend=${maven.test.debug},address=${maven.test.jpda}</argLine>
                         <trimStackTrace>false</trimStackTrace>
                     </configuration>
                 </plugin>
