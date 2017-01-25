@@ -346,7 +346,7 @@
                 <plugin>
                     <groupId>net.ju-n.maven.plugins</groupId>
                     <artifactId>checksum-maven-plugin</artifactId>
-                    <version>1.3</version>
+                    <version>1.4</version>
                     <configuration>
                         <algorithms>
                             <algorithm>MD5</algorithm>
