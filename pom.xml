@@ -202,7 +202,7 @@
 
         <h2.groupId>com.h2database</h2.groupId>
         <h2.artifactId>h2</h2.artifactId>
-        <h2.version>1.4.187</h2.version>
+        <h2.version>1.4.193</h2.version>
         <h2.driverClassName>org.h2.Driver</h2.driverClassName>
         <h2.validateQuery>SELECT 1</h2.validateQuery>
 
