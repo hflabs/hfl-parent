@@ -210,6 +210,10 @@
         <dbf.artifactId>javadbf</dbf.artifactId>
         <dbf.version>0.4.0</dbf.version>
 
+        <mongodb.groupId>org.mongodb</mongodb.groupId>
+        <mongodb.artifactId>mongo-java-driver</mongodb.artifactId>
+        <mongodb.version>3.4.2</mongodb.version>
+
         <!-- ############################################################################ -->
         <!-- Spring libraries versions -->
         <!-- ############################################################################ -->
