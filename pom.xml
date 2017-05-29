@@ -196,7 +196,7 @@
 
         <hsqldb.groupId>org.hsqldb</hsqldb.groupId>
         <hsqldb.artifactId>hsqldb</hsqldb.artifactId>
-        <hsqldb.version>2.3.4</hsqldb.version>
+        <hsqldb.version>2.4.0</hsqldb.version>
         <hsqldb.driverClassName>org.hsqldb.jdbc.JDBCDriver</hsqldb.driverClassName>
         <hsqldb.validateQuery>SELECT 1 FROM INFORMATION_SCHEMA.SYSTEM_USERS</hsqldb.validateQuery>
 
