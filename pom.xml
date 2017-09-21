@@ -111,6 +111,7 @@
         <mapdb.version>1.0.8</mapdb.version>
         <guava.version>22.0</guava.version>
         <joda-time.version>2.9.9</joda-time.version>
+        <lambdaworks.scrypt.version>1.4.0</lambdaworks.scrypt.version>
 
         <!-- ANT versions -->
         <ant.version>1.10.1</ant.version>
