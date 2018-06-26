@@ -162,7 +162,7 @@
 
         <mariadb.groupId>org.mariadb.jdbc</mariadb.groupId>
         <mariadb.artifactId>mariadb-java-client</mariadb.artifactId>
-        <mariadb.version>1.5.5</mariadb.version>
+        <mariadb.version>2.2.5</mariadb.version>
         <mariadb.driverClassName>org.mariadb.jdbc.Driver</mariadb.driverClassName>
         <mariadb.validateQuery>SELECT 1</mariadb.validateQuery>
 
