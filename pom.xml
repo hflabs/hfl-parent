@@ -5,7 +5,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>15.0-SNAPSHOT</version>
+    <version>16.0-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -91,7 +91,7 @@
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
         <!-- ############################################################################ -->
-        <lombok.version>1.16.16</lombok.version>
+        <lombok.version>1.18.0</lombok.version>
         <asm.version>5.0.4</asm.version>
         <mvel2.version>2.3.1.Final</mvel2.version>
         <aspectj.version>1.8.9</aspectj.version>
@@ -123,9 +123,9 @@
         <commons-lang.version>2.6</commons-lang.version>
         <commons-lang3.version>3.5</commons-lang3.version>
         <commons-collections.version>3.2.2</commons-collections.version>
-        <commons-io.version>2.5</commons-io.version>
+        <commons-io.version>2.6</commons-io.version>
         <commons-net.version>3.6</commons-net.version>
-        <commons-compress.version>1.14</commons-compress.version>
+        <commons-compress.version>1.17</commons-compress.version>
         <commons-codec.version>1.10</commons-codec.version>
         <commons-fileupload.version>1.3.2</commons-fileupload.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
@@ -136,7 +136,7 @@
         <!-- ############################################################################ -->
         <!-- Mappings & parsers versions -->
         <!-- ############################################################################ -->
-        <jackson.version>2.8.8</jackson.version>
+        <jackson.version>2.9.6</jackson.version>
         <poi.version>3.16</poi.version>
         <super-csv.version>2.4.0</super-csv.version>
         <snakeyaml.version>1.18</snakeyaml.version>
@@ -219,21 +219,21 @@
         <!-- ############################################################################ -->
         <!-- Spring libraries versions -->
         <!-- ############################################################################ -->
-        <springframework.version>4.3.8.RELEASE</springframework.version>
-        <spring-security.version>4.2.2.RELEASE</spring-security.version>
+        <springframework.version>5.0.7.RELEASE</springframework.version>
+        <spring-security.version>5.0.6.RELEASE</spring-security.version>
         <spring-kerberos.version>1.0.1.RELEASE</spring-kerberos.version>
         <spring-retry.version>1.2.0.RELEASE</spring-retry.version>
 
         <!-- ############################################################################ -->
         <!-- SOAP & REST versions -->
         <!-- ############################################################################ -->
-        <cxf.version>3.1.11</cxf.version>
+        <cxf.version>3.2.5</cxf.version>
         <cxf-xjc.version>3.1.0</cxf-xjc.version>
 
         <!-- Jaxb versions -->
         <jaxb-xjc.version>2.2.11</jaxb-xjc.version>
-        <jaxb2.version>0.11.1</jaxb2.version>
-        <jaxb2-basics.version>1.0.2</jaxb2-basics.version>
+        <jaxb2.version>1.11.1</jaxb2.version>
+        <jaxb2-basics.version>1.1.0</jaxb2-basics.version>
         <jaxb2-annotate.version>1.0.0</jaxb2-annotate.version>
 
         <!-- ############################################################################ -->
@@ -241,14 +241,14 @@
         <!-- ############################################################################ -->
         <lucene.version>6.5.1</lucene.version>
         <hazelcast.version>3.7.8</hazelcast.version>
-        <infinispan.version>8.2.6.Final</infinispan.version>
+        <infinispan.version>9.3.0.Final</infinispan.version>
 
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
         <!-- ############################################################################ -->
-        <jsoup.version>1.10.2</jsoup.version>
-        <httpclient.version>4.5.3</httpclient.version>
-        <tiles.version>3.0.7</tiles.version>
+        <jsoup.version>1.11.3</jsoup.version>
+        <httpclient.version>4.5.5</httpclient.version>
+        <tiles.version>3.0.8</tiles.version>
 
         <!-- ############################################################################ -->
         <!-- Java specifications libraries version -->
@@ -262,8 +262,8 @@
         <javax.interceptor-api.version>3.1</javax.interceptor-api.version>
         <javax.persistence-api.version>1.0.2</javax.persistence-api.version>
         <javax.jms-api.version>1.1-rev-1</javax.jms-api.version>
-        <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
-        <javax.mail-api.version>1.5.6</javax.mail-api.version>
+        <javax.ws.rs-api.version>2.1</javax.ws.rs-api.version>
+        <javax.mail-api.version>1.6.1</javax.mail-api.version>
         <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
         <javax.servlet-jstl.version>1.2</javax.servlet-jstl.version>
         <javax.servlet-jsp.version>2.0</javax.servlet-jsp.version>
@@ -272,11 +272,11 @@
         <!-- ############################################################################ -->
         <!-- Test frameworks version -->
         <!-- ############################################################################ -->
-        <testng.version>6.11</testng.version>
-        <assertj.version>3.8.0</assertj.version>
+        <testng.version>6.14.3</testng.version>
+        <assertj.version>3.10.0</assertj.version>
         <hamcrest.version>1.3</hamcrest.version>
         <jsonassert.version>1.5.0</jsonassert.version>
-        <mockito.version>2.8.9</mockito.version>
+        <mockito.version>2.19.0</mockito.version>
         <dbunit.version>2.5.3</dbunit.version>
 
         <reportng.version>1.1.4</reportng.version>
@@ -431,7 +431,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.0.2</version>
+                    <version>3.1.0</version>
                     <executions>
                         <execution>
                             <id>default-testResources</id>
@@ -454,13 +454,13 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.1.1</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>wagon-maven-plugin</artifactId>
-                    <version>1.0</version>
+                    <version>2.0.0</version>
                 </plugin>
 
                 <plugin>
@@ -523,7 +523,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.2</version>
                     <configuration>
                         <archive>
                             <manifestEntries>
@@ -541,13 +541,13 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.20</version>
+                    <version>2.22.0</version>
                     <configuration>
                         <argLine>-agentlib:jdwp=transport=dt_socket,server=y,suspend=${maven.test.debug},address=${maven.test.jpda}</argLine>
                         <skipTests>${maven.test.skip}</skipTests>
@@ -568,7 +568,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>2.17</version>
+                    <version>3.0.0</version>
                     <dependencies>
                         <dependency>
                             <groupId>ru.hflabs</groupId>
