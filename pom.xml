@@ -5,7 +5,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>16.0-SNAPSHOT</version>
+    <version>17.0-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -155,7 +155,7 @@
         <!-- Storage libraries versions -->
         <!-- ############################################################################ -->
         <hikari.version>2.5.1</hikari.version>
-        <flyway.version>1.7</flyway.version>
+        <flyway.version>5.1.4</flyway.version>
 
         <oracle.groupId>com.oracle</oracle.groupId>
         <oracle.artifactId>ojdbc7</oracle.artifactId>
