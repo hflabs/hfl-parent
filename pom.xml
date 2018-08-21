@@ -155,7 +155,7 @@
         <!-- Storage libraries versions -->
         <!-- ############################################################################ -->
         <hikari.version>2.5.1</hikari.version>
-        <flyway.version>5.1.4</flyway.version>
+        <flyway.version>4.2.0</flyway.version>
 
         <oracle.groupId>com.oracle</oracle.groupId>
         <oracle.artifactId>ojdbc7</oracle.artifactId>
