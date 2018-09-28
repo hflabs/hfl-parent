@@ -125,7 +125,6 @@
         <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <commons-lang.version>2.6</commons-lang.version>
         <commons-lang3.version>3.5</commons-lang3.version>
-        <commons-collections.version>3.2.2</commons-collections.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-net.version>3.6</commons-net.version>
         <commons-compress.version>1.17</commons-compress.version>
@@ -143,7 +142,6 @@
         <poi.version>3.16</poi.version>
         <super-csv.version>2.4.0</super-csv.version>
         <snakeyaml.version>1.18</snakeyaml.version>
-        <dozer.version>5.5.1</dozer.version>
 
         <!-- ############################################################################ -->
         <!-- Compression&Serialization versions -->
@@ -362,39 +360,6 @@
                             <algorithm>MD5</algorithm>
                         </algorithms>
                     </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>aspectj-maven-plugin</artifactId>
-                    <version>1.10</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.aspectj</groupId>
-                            <artifactId>aspectjrt</artifactId>
-                            <version>${aspectj.version}</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.aspectj</groupId>
-                            <artifactId>aspectjtools</artifactId>
-                            <version>${aspectj.version}</version>
-                        </dependency>
-                    </dependencies>
-                    <configuration>
-                        <source>${j2se.version}</source>
-                        <target>${j2se.version}</target>
-                        <complianceLevel>${j2se.version}</complianceLevel>
-                        <encoding>${project.build.sourceEncoding}</encoding>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>default-aspectCompile</id>
-                            <goals>
-                                <goal>compile</goal>
-                                <goal>test-compile</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                 </plugin>
 
                 <plugin>
@@ -722,22 +687,6 @@
                 <version>${log4j.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>net.sf.dozer</groupId>
-                <artifactId>dozer</artifactId>
-                <version>${dozer.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>jcl-over-slf4j</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
             <!-- Apache commons libraries  -->
             <dependency>
                 <groupId>commons-dbcp</groupId>
@@ -765,11 +714,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-collections</groupId>
-                <artifactId>commons-collections</artifactId>
-                <version>${commons-collections.version}</version>
             </dependency>
 
             <!-- Spring libraries -->
