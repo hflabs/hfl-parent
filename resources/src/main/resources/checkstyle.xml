@@ -61,6 +61,7 @@
         </module>
         <module name="IllegalImport">
             <property name="severity" value="error"/>
+            <property name="illegalPkgs" value="com.beust.jcommander.internal, org.testng.collections, org.assertj.core.util, edu.emory.mathcs.backport"/>
         </module>
         <module name="InnerTypeLast">
             <property name="severity" value="warning"/>
