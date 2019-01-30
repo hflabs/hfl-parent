@@ -177,7 +177,7 @@
 
         <postgresql.groupId>org.postgresql</postgresql.groupId>
         <postgresql.artifactId>postgresql</postgresql.artifactId>
-        <postgresql.version>9.4.1211</postgresql.version>
+        <postgresql.version>42.2.5</postgresql.version>
         <postgresql.driverClassName>org.postgresql.Driver</postgresql.driverClassName>
         <postgresql.validateQuery>SELECT 1</postgresql.validateQuery>
 
