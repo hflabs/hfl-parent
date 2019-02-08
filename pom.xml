@@ -11,7 +11,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>19.1-SNAPSHOT</version>
+    <version>19.2-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -215,7 +215,7 @@
         <!-- ############################################################################ -->
         <!-- Distributed collections versions -->
         <!-- ############################################################################ -->
-        <lucene.version>6.5.1</lucene.version>
+        <lucene.version>7.6.0</lucene.version>
 
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
@@ -240,9 +240,6 @@
         <!-- ############################################################################ -->
         <testng.version>6.14.3</testng.version>
         <dbunit.version>2.5.4</dbunit.version>
-
-        <reportng.version>1.1.4</reportng.version>
-        <guice.version>2.0</guice.version>
 
     </properties>
 
@@ -273,7 +270,7 @@
                                         <version>[${j2se.version},)</version>
                                     </requireJavaVersion>
                                     <!-- use it when upgrading versions for check dependency conflicts -->
-                                    <!--<dependencyConvergence/>-->
+                                    <!--<dependencyConvergence />-->
                                 </rules>
                             </configuration>
                         </execution>
@@ -474,7 +471,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>19.1-SNAPSHOT</version>
+                            <version>19.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
