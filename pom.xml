@@ -11,7 +11,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>19.3-SNAPSHOT</version>
+    <version>19.4-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -51,10 +51,10 @@
         <!-- ############################################################################ -->
         <!-- Build properties -->
         <!-- ############################################################################ -->
-        <j2se.version>1.8</j2se.version>
+        <j2se.version>11</j2se.version>
         <j2se.debug>true</j2se.debug>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.build.version>3.0</maven.build.version>
+        <maven.build.version>3.5</maven.build.version>
         <maven.build.timestamp.format>yyyy-MM-dd_HH.mm.ss</maven.build.timestamp.format>
         <maven.build.settingsFile>${user.home}/.m2/settings.xml</maven.build.settingsFile>
 
@@ -314,8 +314,7 @@
                             <arg>-Xlint:deprecation</arg>
                             <arg>-Xlint:overrides</arg>
                         </compilerArgs>
-                        <source>${j2se.version}</source>
-                        <target>${j2se.version}</target>
+                        <release>${j2se.version}</release>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <optimize>true</optimize>
                         <debug>${j2se.debug}</debug>
@@ -471,7 +470,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>19.2-SNAPSHOT</version>
+                            <version>19.4-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
