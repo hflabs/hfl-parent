@@ -86,6 +86,7 @@
         <maven.checkstyle.skip>true</maven.checkstyle.skip>
         <maven.war.exploded.extension>exploded.war</maven.war.exploded.extension>
         <maven.war.exploded>${project.build.finalName}_${maven.war.exploded.extension}</maven.war.exploded>
+        <maven.compiler.fork>true</maven.compiler.fork>
 
         <!-- ############################################################################ -->
         <!-- Groovy versions -->
@@ -321,7 +322,7 @@
                         <debug>${j2se.debug}</debug>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
-                        <fork>true</fork>
+                        <fork>${maven.compiler.fork}</fork>
                         <meminitial>128m</meminitial>
                         <maxmem>512m</maxmem>
                     </configuration>
