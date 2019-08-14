@@ -158,16 +158,16 @@
         <mysql.driverClassName>com.mysql.jdbc.Driver</mysql.driverClassName>
         <mysql.validateQuery>SELECT 1</mysql.validateQuery>
 
-        <mssql.groupId>net.sourceforge.jtds</mssql.groupId>
-        <mssql.artifactId>jtds</mssql.artifactId>
-        <mssql.version>1.3.1</mssql.version>
-        <mssql.driverClassName>net.sourceforge.jtds.jdbc.Driver</mssql.driverClassName>
+        <mssql.groupId>com.microsoft.sqlserver</mssql.groupId>
+        <mssql.artifactId>mssql-jdbc</mssql.artifactId>
+        <mssql.version>7.4.1.jre11</mssql.version>
+        <mssql.driverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</mssql.driverClassName>
         <mssql.validateQuery>SELECT 1</mssql.validateQuery>
 
-        <sybase.groupId>${mssql.groupId}</sybase.groupId>
-        <sybase.artifactId>${mssql.artifactId}</sybase.artifactId>
-        <sybase.version>${mssql.version}</sybase.version>
-        <sybase.driverClassName>${mssql.driverClassName}</sybase.driverClassName>
+        <sybase.groupId>net.sourceforge.jtds</sybase.groupId>
+        <sybase.artifactId>jtds</sybase.artifactId>
+        <sybase.version>1.3.1</sybase.version>
+        <sybase.driverClassName>net.sourceforge.jtds.jdbc.Driver</sybase.driverClassName>
         <sybase.validateQuery>SELECT 1</sybase.validateQuery>
 
         <vertica.groupId>com.vertica</vertica.groupId>
