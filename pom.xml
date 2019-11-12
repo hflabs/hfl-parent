@@ -11,7 +11,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>19.4-SNAPSHOT</version>
+    <version>19.5-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -472,7 +472,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>19.4-SNAPSHOT</version>
+                            <version>19.5-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
