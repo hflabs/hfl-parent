@@ -9,10 +9,15 @@
     <module name="Translation">
         <property name="severity" value="error"/>
     </module>
+    <module name="SuppressWarningsFilter"/>
     <module name="TreeWalker">
-        <!-- Required for SuppressionCommentFilter below -->
-        <module name="FileContentsHolder"/>
         <property name="tabWidth" value="1"/>
+        <module name="SuppressionCommentFilter">
+            <property name="offCommentFormat" value="GEN-BEGIN\:"/>
+            <property name="onCommentFormat" value="GEN-END\:"/>
+        </module>
+        <!-- Required for SuppressWarningsFilter below -->
+        <module name="SuppressWarningsHolder" />
         <module name="AvoidStarImport">
             <property name="severity" value="error"/>
             <property name="allowClassImports" value="true"/>
@@ -62,6 +67,10 @@
         <module name="IllegalImport">
             <property name="severity" value="error"/>
             <property name="illegalPkgs" value="com.beust.jcommander.internal, org.testng.collections, org.assertj.core.util, edu.emory.mathcs.backport"/>
+        </module>
+        <module name="IllegalType">
+            <property name="memberModifiers" value="LITERAL_PUBLIC"/>
+            <property name="illegalClassNames" value="Pair, Three"/>
         </module>
         <module name="InnerTypeLast">
             <property name="severity" value="warning"/>
@@ -165,9 +174,5 @@
         <module name="WhitespaceAfter">
             <property name="severity" value="error"/>
         </module>
-    </module>
-    <module name="SuppressionCommentFilter">
-        <property name="offCommentFormat" value="GEN-BEGIN\:"/>
-        <property name="onCommentFormat" value="GEN-END\:"/>
     </module>
 </module>
