@@ -84,6 +84,7 @@
         <maven.test.debug>n</maven.test.debug>
         <maven.test.jpda>5010</maven.test.jpda>
         <maven.checkstyle.skip>true</maven.checkstyle.skip>
+        <maven.checkstyle.suppressionsLocation/>
         <maven.war.exploded.extension>exploded.war</maven.war.exploded.extension>
         <maven.war.exploded>${project.build.finalName}_${maven.war.exploded.extension}</maven.war.exploded>
         <maven.compiler.fork>true</maven.compiler.fork>
@@ -272,7 +273,7 @@
                                         <version>[${j2se.version},)</version>
                                     </requireJavaVersion>
                                     <!-- use it when upgrading versions for check dependency conflicts -->
-                                    <dependencyConvergence />
+                                    <dependencyConvergence/>
                                 </rules>
                             </configuration>
                         </execution>
@@ -490,6 +491,7 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <failsOnError>true</failsOnError>
                         <linkXRef>false</linkXRef>
+                        <suppressionsLocation>${maven.checkstyle.suppressionsLocation}</suppressionsLocation>
                     </configuration>
                 </plugin>
 
