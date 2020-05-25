@@ -112,6 +112,8 @@
         <lambdaworks.scrypt.version>1.4.0</lambdaworks.scrypt.version>
         <jsch.version>0.1.55</jsch.version>
         <jcifs.version>1.3.17</jcifs.version>
+        <oshi.version>4.3.0</oshi.version>
+        <micrometer-jvm-extras.version>0.2.0</micrometer-jvm-extras.version>
 
         <!-- ANT versions -->
         <ant.version>1.10.6</ant.version>
@@ -237,6 +239,8 @@
         <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
         <javax.servlet-jstl.version>1.2</javax.servlet-jstl.version>
         <javax.servlet-jsp.version>2.0</javax.servlet-jsp.version>
+        <!-- Override parent spring-boot-dependencies version -->
+        <jna.version>5.5.0</jna.version>
 
         <!-- ############################################################################ -->
         <!-- Test frameworks version -->
