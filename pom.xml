@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.2.1.RELEASE</version>
+        <version>2.3.1.RELEASE</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>19.5-SNAPSHOT</version>
+    <version>19.6-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -107,8 +107,8 @@
         <!-- ############################################################################ -->
         <trove.version>3.0.3</trove.version>
         <mapdb.version>1.0.8</mapdb.version>
-        <guava.version>22.0</guava.version>
-        <streamex.version>0.6.8</streamex.version>
+        <guava.version>29.0-jre</guava.version>
+        <streamex.version>0.7.2</streamex.version>
         <lambdaworks.scrypt.version>1.4.0</lambdaworks.scrypt.version>
         <jsch.version>0.1.55</jsch.version>
         <jcifs.version>1.3.17</jcifs.version>
@@ -116,12 +116,12 @@
         <micrometer-jvm-extras.version>0.2.0</micrometer-jvm-extras.version>
 
         <!-- ANT versions -->
-        <ant.version>1.10.6</ant.version>
+        <ant.version>1.10.8</ant.version>
         <ant-contrib.version>1.0b3</ant-contrib.version>
 
         <!-- Apache commons version -->
-        <commons-io.version>2.6</commons-io.version>
-        <commons-compress.version>1.18</commons-compress.version>
+        <commons-io.version>2.7</commons-io.version>
+        <commons-compress.version>1.20</commons-compress.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <commons-digester.version>2.1</commons-digester.version>
         <commons-cli.version>1.4</commons-cli.version>
@@ -207,8 +207,8 @@
         <!-- ############################################################################ -->
         <!-- SOAP & REST versions -->
         <!-- ############################################################################ -->
-        <cxf.version>3.3.2</cxf.version>
-        <cxf-xjc.version>3.1.0</cxf-xjc.version>
+        <cxf.version>3.3.7</cxf.version>
+        <cxf-xjc.version>3.3.1</cxf-xjc.version>
 
         <!-- Jaxb versions -->
         <jaxb-xjc.version>2.2.11</jaxb-xjc.version>
@@ -224,7 +224,7 @@
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
         <!-- ############################################################################ -->
-        <jsoup.version>1.12.1</jsoup.version>
+        <jsoup.version>1.13.1</jsoup.version>
         <tiles.version>3.0.8</tiles.version>
 
         <!-- ############################################################################ -->
@@ -232,7 +232,7 @@
         <!-- ############################################################################ -->
         <javax.activation.version>1.1.1</javax.activation.version>
         <javax.connector-api.version>1.0</javax.connector-api.version>
-        <javax.jna.version>4.2.2</javax.jna.version>
+        <javax.jna.version>5.5.0</javax.jna.version>
         <javax.interceptor-api.version>3.1</javax.interceptor-api.version>
         <javax.persistence-api.version>1.0.2</javax.persistence-api.version>
         <javax.jws-api.version>1.1</javax.jws-api.version>
@@ -245,8 +245,8 @@
         <!-- ############################################################################ -->
         <!-- Test frameworks version -->
         <!-- ############################################################################ -->
-        <testng.version>6.14.3</testng.version>
-        <dbunit.version>2.5.4</dbunit.version>
+        <testng.version>7.1.0</testng.version>
+        <dbunit.version>2.7.0</dbunit.version>
 
     </properties>
 
@@ -364,7 +364,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-remote-resources-plugin</artifactId>
-                    <version>1.6.0</version>
+                    <version>1.7.0</version>
                 </plugin>
 
                 <plugin>
@@ -472,12 +472,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.1.1</version>
                     <dependencies>
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>19.5-SNAPSHOT</version>
+                            <version>19.6-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -640,6 +640,12 @@
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
                 <version>${testng.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>guava</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.dbunit</groupId>

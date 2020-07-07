@@ -10,6 +10,10 @@
         <property name="severity" value="error"/>
     </module>
     <module name="SuppressWarningsFilter"/>
+    <module name="LineLength">
+        <property name="severity" value="warning"/>
+        <property name="max" value="200"/>
+    </module>
     <module name="TreeWalker">
         <property name="tabWidth" value="1"/>
         <module name="SuppressionCommentFilter">
@@ -78,10 +82,7 @@
         <module name="JavadocMethod">
             <property name="severity" value="warning"/>
             <property name="allowMissingParamTags" value="true"/>
-            <property name="allowUndeclaredRTE" value="true"/>
             <property name="allowMissingReturnTag" value="true"/>
-            <property name="allowMissingJavadoc" value="true"/>
-            <property name="allowMissingThrowsTags" value="true"/>
         </module>
         <module name="JavadocStyle">
             <property name="severity" value="warning"/>
@@ -100,10 +101,6 @@
         <module name="LeftCurly">
             <property name="severity" value="error"/>
             <property name="option" value="eol"/>
-        </module>
-        <module name="LineLength">
-            <property name="severity" value="warning"/>
-            <property name="max" value="200"/>
         </module>
         <module name="LocalFinalVariableName">
             <property name="severity" value="error"/>
