@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <version>2.3.3.RELEASE</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>19.7-SNAPSHOT</version>
+    <version>19.8-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -84,7 +84,7 @@
         <maven.test.debug>n</maven.test.debug>
         <maven.test.jpda>5010</maven.test.jpda>
         <maven.checkstyle.skip>true</maven.checkstyle.skip>
-        <maven.checkstyle.suppressionsLocation/>
+        <maven.checkstyle.suppressionsLocation />
         <maven.war.exploded.extension>exploded.war</maven.war.exploded.extension>
         <maven.war.exploded>${project.build.finalName}_${maven.war.exploded.extension}</maven.war.exploded>
         <maven.compiler.fork>true</maven.compiler.fork>
@@ -477,7 +477,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>19.6-SNAPSHOT</version>
+                            <version>19.8-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
