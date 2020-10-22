@@ -247,6 +247,7 @@
         <!-- ############################################################################ -->
         <testng.version>7.1.0</testng.version>
         <dbunit.version>2.7.0</dbunit.version>
+        <wiremock.version>2.27.2</wiremock.version>
 
     </properties>
 
