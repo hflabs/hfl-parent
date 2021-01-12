@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.3.3.RELEASE</version>
+        <version>2.3.7.RELEASE</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>19.8-SNAPSHOT</version>
+    <version>21.1-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -98,45 +98,58 @@
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
         <!-- ############################################################################ -->
-        <asm.version>7.2</asm.version>
-        <mvel2.version>2.4.4.Final</mvel2.version>
+        <mvel2.version>2.4.11.Final</mvel2.version>
         <cglib.version>3.3.0</cglib.version>
 
         <!-- ############################################################################ -->
         <!-- Helpers & frameworks -->
         <!-- ############################################################################ -->
+        <guava.version>30.1-jre</guava.version>
+        <streamex.version>0.7.3</streamex.version>
+        <joda-time.version>2.10.9</joda-time.version>
+        <mapdb.version>1.0.9</mapdb.version>
         <trove.version>3.0.3</trove.version>
-        <mapdb.version>1.0.8</mapdb.version>
-        <guava.version>29.0-jre</guava.version>
-        <streamex.version>0.7.2</streamex.version>
-        <lambdaworks.scrypt.version>1.4.0</lambdaworks.scrypt.version>
         <jsch.version>0.1.55</jsch.version>
         <jcifs.version>1.3.17</jcifs.version>
-        <oshi.version>4.3.0</oshi.version>
-        <micrometer-jvm-extras.version>0.2.0</micrometer-jvm-extras.version>
 
-        <!-- ANT versions -->
-        <ant.version>1.10.8</ant.version>
-        <ant-contrib.version>1.0b3</ant-contrib.version>
-
-        <!-- Apache commons version -->
-        <commons-io.version>2.7</commons-io.version>
-        <commons-compress.version>1.20</commons-compress.version>
-        <commons-dbcp.version>1.4</commons-dbcp.version>
-        <commons-digester.version>2.1</commons-digester.version>
-        <commons-cli.version>1.4</commons-cli.version>
+        <!-- ############################################################################ -->
+        <!-- Meters & system information -->
+        <!-- ############################################################################ -->
+        <oshi.version>5.3.7</oshi.version>
+        <micrometer-jvm-extras.version>0.2.1</micrometer-jvm-extras.version>
 
         <!-- ############################################################################ -->
         <!-- Mappings & parsers versions -->
         <!-- ############################################################################ -->
-        <poi.version>3.16</poi.version>
+        <poi.version>3.17</poi.version>
         <super-csv.version>2.4.0</super-csv.version>
 
         <!-- ############################################################################ -->
         <!-- Compression&Serialization versions -->
         <!-- ############################################################################ -->
         <kryo.version>2.22</kryo.version>
-        <compress-lzf.version>1.0.4</compress-lzf.version>
+        <compress-lzf.version>1.1</compress-lzf.version>
+
+        <!-- ############################################################################ -->
+        <!-- Security versions -->
+        <!-- ############################################################################ -->
+        <lambdaworks.scrypt.version>1.4.0</lambdaworks.scrypt.version>
+
+        <!-- ############################################################################ -->
+        <!-- ANT versions -->
+        <!-- ############################################################################ -->
+        <ant.version>1.10.9</ant.version>
+        <ant-contrib.version>1.0b3</ant-contrib.version>
+
+        <!-- ############################################################################ -->
+        <!-- Apache commons version -->
+        <!-- ############################################################################ -->
+        <commons-cli.version>1.4</commons-cli.version>
+        <commons-compress.version>1.20</commons-compress.version>
+        <commons-configuration.version>1.10</commons-configuration.version>
+        <commons-io.version>2.7</commons-io.version>
+        <commons-dbcp.version>1.4</commons-dbcp.version>
+        <commons-digester.version>2.1</commons-digester.version>
 
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
@@ -207,7 +220,7 @@
         <!-- ############################################################################ -->
         <!-- SOAP & REST versions -->
         <!-- ############################################################################ -->
-        <cxf.version>3.3.7</cxf.version>
+        <cxf.version>3.3.9</cxf.version>
         <cxf-xjc.version>3.3.1</cxf-xjc.version>
 
         <!-- Jaxb versions -->
@@ -239,13 +252,11 @@
         <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
         <javax.servlet-jstl.version>1.2</javax.servlet-jstl.version>
         <javax.servlet-jsp.version>2.0</javax.servlet-jsp.version>
-        <!-- Override parent spring-boot-dependencies version -->
-        <jna.version>5.5.0</jna.version>
 
         <!-- ############################################################################ -->
         <!-- Test frameworks version -->
         <!-- ############################################################################ -->
-        <testng.version>7.1.0</testng.version>
+        <testng.version>7.3.0</testng.version>
         <dbunit.version>2.7.0</dbunit.version>
         <wiremock.version>2.27.2</wiremock.version>
 
@@ -304,7 +315,7 @@
                 <plugin>
                     <groupId>net.ju-n.maven.plugins</groupId>
                     <artifactId>checksum-maven-plugin</artifactId>
-                    <version>1.4</version>
+                    <version>1.9</version>
                     <configuration>
                         <algorithms>
                             <algorithm>MD5</algorithm>
@@ -478,7 +489,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>19.8-SNAPSHOT</version>
+                            <version>21.1-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -519,7 +530,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-archetype-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.2.0</version>
                     <configuration>
                         <settingsFile>${maven.build.settingsFile}</settingsFile>
                     </configuration>
@@ -569,7 +580,145 @@
 
         <dependencies>
 
+            <!-- Logging -->
+            <dependency>
+                <groupId>uk.org.lidalia</groupId>
+                <artifactId>sysout-over-slf4j</artifactId>
+                <version>1.0.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.logback-extensions</groupId>
+                <artifactId>logback-ext-spring</artifactId>
+                <version>0.1.5</version>
+            </dependency>
+
+            <!-- Aspect&ByteCode libraries -->
+            <dependency>
+                <groupId>org.mvel</groupId>
+                <artifactId>mvel2</artifactId>
+                <version>${mvel2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib-nodep</artifactId>
+                <version>${cglib.version}</version>
+            </dependency>
+
+            <!-- Helpers & frameworks -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>one.util</groupId>
+                <artifactId>streamex</artifactId>
+                <version>${streamex.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapdb</groupId>
+                <artifactId>mapdb</artifactId>
+                <version>${mapdb.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sf.trove4j</groupId>
+                <artifactId>trove4j</artifactId>
+                <version>${trove.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jcraft</groupId>
+                <artifactId>jsch</artifactId>
+                <version>${jsch.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jcifs</groupId>
+                <artifactId>jcifs</artifactId>
+                <version>${jcifs.version}</version>
+            </dependency>
+
+            <!-- Meters & system information -->
+            <dependency>
+                <groupId>com.github.oshi</groupId>
+                <artifactId>oshi-core</artifactId>
+                <version>${oshi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.mweirauch</groupId>
+                <artifactId>micrometer-jvm-extras</artifactId>
+                <version>${micrometer-jvm-extras.version}</version>
+            </dependency>
+
+            <!-- Mappings & parsers -->
+            <dependency>
+                <groupId>net.sf.supercsv</groupId>
+                <artifactId>super-csv</artifactId>
+                <version>${super-csv.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+
+            <!-- Compression&Serialization -->
+            <dependency>
+                <groupId>com.esotericsoftware.kryo</groupId>
+                <artifactId>kryo</artifactId>
+                <version>${kryo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ning</groupId>
+                <artifactId>compress-lzf</artifactId>
+                <version>${compress-lzf.version}</version>
+            </dependency>
+
             <!-- Apache commons libraries  -->
+            <dependency>
+                <groupId>commons-cli</groupId>
+                <artifactId>commons-cli</artifactId>
+                <version>${commons-cli.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>${commons-compress.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-configuration</groupId>
+                <artifactId>commons-configuration</artifactId>
+                <version>${commons-configuration.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>commons-dbcp</groupId>
                 <artifactId>commons-dbcp</artifactId>
@@ -580,6 +729,12 @@
                         <artifactId>commons-pool</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-digester</groupId>
+                <artifactId>commons-digester</artifactId>
+                <version>${commons-digester.version}</version>
             </dependency>
 
             <!-- Apache cxf libraries -->
@@ -594,6 +749,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-databinding-jaxb</artifactId>
@@ -605,6 +761,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-ws-security</artifactId>
@@ -620,6 +777,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-frontend-jaxws</artifactId>
@@ -646,8 +804,13 @@
                         <groupId>com.google.guava</groupId>
                         <artifactId>guava</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
+
             <dependency>
                 <groupId>org.dbunit</groupId>
                 <artifactId>dbunit</artifactId>
