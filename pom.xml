@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.3.7.RELEASE</version>
+        <version>2.5.1</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>21.1-SNAPSHOT</version>
+    <version>21.2-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -104,7 +104,7 @@
         <!-- ############################################################################ -->
         <!-- Helpers & frameworks -->
         <!-- ############################################################################ -->
-        <guava.version>30.1-jre</guava.version>
+        <guava.version>30.1.1-jre</guava.version>
         <streamex.version>0.7.3</streamex.version>
         <joda-time.version>2.10.9</joda-time.version>
         <mapdb.version>1.0.9</mapdb.version>
@@ -115,8 +115,8 @@
         <!-- ############################################################################ -->
         <!-- Meters & system information -->
         <!-- ############################################################################ -->
-        <oshi.version>5.3.7</oshi.version>
-        <micrometer-jvm-extras.version>0.2.1</micrometer-jvm-extras.version>
+        <oshi.version>5.7.5</oshi.version>
+        <micrometer-jvm-extras.version>0.2.2</micrometer-jvm-extras.version>
 
         <!-- ############################################################################ -->
         <!-- Mappings & parsers versions -->
@@ -138,7 +138,7 @@
         <!-- ############################################################################ -->
         <!-- ANT versions -->
         <!-- ############################################################################ -->
-        <ant.version>1.10.9</ant.version>
+        <ant.version>1.10.10</ant.version>
         <ant-contrib.version>1.0b3</ant-contrib.version>
 
         <!-- ############################################################################ -->
@@ -147,7 +147,7 @@
         <commons-cli.version>1.4</commons-cli.version>
         <commons-compress.version>1.20</commons-compress.version>
         <commons-configuration.version>1.10</commons-configuration.version>
-        <commons-io.version>2.7</commons-io.version>
+        <commons-io.version>2.10.0</commons-io.version>
         <commons-lang.version>2.6</commons-lang.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <commons-digester.version>2.1</commons-digester.version>
@@ -221,7 +221,7 @@
         <!-- ############################################################################ -->
         <!-- SOAP & REST versions -->
         <!-- ############################################################################ -->
-        <cxf.version>3.3.9</cxf.version>
+        <cxf.version>3.4.4</cxf.version>
         <cxf-xjc.version>3.3.1</cxf-xjc.version>
 
         <!-- Jaxb versions -->
@@ -233,7 +233,7 @@
         <!-- ############################################################################ -->
         <!-- Distributed collections versions -->
         <!-- ############################################################################ -->
-        <lucene.version>8.5.2</lucene.version>
+        <lucene.version>8.9.0</lucene.version>
 
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
@@ -246,7 +246,7 @@
         <!-- ############################################################################ -->
         <javax.activation.version>1.1.1</javax.activation.version>
         <javax.connector-api.version>1.0</javax.connector-api.version>
-        <javax.jna.version>5.5.0</javax.jna.version>
+        <javax.jna.version>5.8.0</javax.jna.version>
         <javax.interceptor-api.version>3.1</javax.interceptor-api.version>
         <javax.persistence-api.version>1.0.2</javax.persistence-api.version>
         <javax.jws-api.version>1.1</javax.jws-api.version>
@@ -257,7 +257,7 @@
         <!-- ############################################################################ -->
         <!-- Test frameworks version -->
         <!-- ############################################################################ -->
-        <testng.version>7.3.0</testng.version>
+        <testng.version>7.4.0</testng.version>
         <dbunit.version>2.7.0</dbunit.version>
         <wiremock.version>2.27.2</wiremock.version>
 
@@ -316,7 +316,7 @@
                 <plugin>
                     <groupId>net.nicoulaj.maven.plugins</groupId>
                     <artifactId>checksum-maven-plugin</artifactId>
-                    <version>1.9</version>
+                    <version>1.10</version>
                     <configuration>
                         <algorithms>
                             <algorithm>MD5</algorithm>
@@ -485,7 +485,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.1.2</version>
                     <dependencies>
                         <dependency>
                             <groupId>ru.hflabs</groupId>
