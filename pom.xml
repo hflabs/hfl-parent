@@ -490,7 +490,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>21.1-SNAPSHOT</version>
+                            <version>21.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
