@@ -98,7 +98,7 @@
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
         <!-- ############################################################################ -->
-        <mvel2.version>2.4.11.Final</mvel2.version>
+        <mvel2.version>2.4.12.Final</mvel2.version>
         <cglib.version>3.3.0</cglib.version>
 
         <!-- ############################################################################ -->
@@ -106,7 +106,7 @@
         <!-- ############################################################################ -->
         <guava.version>30.1.1-jre</guava.version>
         <streamex.version>0.7.3</streamex.version>
-        <joda-time.version>2.10.9</joda-time.version>
+        <joda-time.version>2.10.10</joda-time.version>
         <mapdb.version>1.0.9</mapdb.version>
         <trove.version>3.0.3</trove.version>
         <jsch.version>0.1.55</jsch.version>
