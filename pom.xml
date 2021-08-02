@@ -145,7 +145,7 @@
         <!-- Apache commons version -->
         <!-- ############################################################################ -->
         <commons-cli.version>1.4</commons-cli.version>
-        <commons-compress.version>1.20</commons-compress.version>
+        <commons-compress.version>1.21</commons-compress.version>
         <commons-configuration.version>1.10</commons-configuration.version>
         <commons-io.version>2.10.0</commons-io.version>
         <commons-lang.version>2.6</commons-lang.version>
