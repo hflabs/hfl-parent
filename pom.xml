@@ -173,6 +173,7 @@
         <mssql.groupId>com.microsoft.sqlserver</mssql.groupId>
         <mssql.artifactId>mssql-jdbc</mssql.artifactId>
         <mssql.version>9.4.1.jre11</mssql.version>
+        <mssql-jdbc.version>${mssql.version}</mssql-jdbc.version>
         <mssql.driverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</mssql.driverClassName>
         <mssql.validateQuery>SELECT 1</mssql.validateQuery>
 
@@ -196,6 +197,7 @@
 
         <hsqldb.groupId>org.hsqldb</hsqldb.groupId>
         <hsqldb.artifactId>hsqldb</hsqldb.artifactId>
+        <hsqldb.version>2.6.1</hsqldb.version>
         <hsqldb.driverClassName>org.hsqldb.jdbc.JDBCDriver</hsqldb.driverClassName>
         <hsqldb.validateQuery>SELECT 1 FROM INFORMATION_SCHEMA.SYSTEM_USERS</hsqldb.validateQuery>
 
