@@ -98,7 +98,8 @@
         <!-- ############################################################################ -->
         <!-- Helpers & frameworks -->
         <!-- ############################################################################ -->
-        <guava.version>31.0.1-jre</guava.version>
+        <!-- workaround for bug in WF https://github.com/wildfly/jandex/issues/147 -->
+        <guava.version>30.1.1-jre</guava.version>
         <streamex.version>0.8.1</streamex.version>
         <joda-time.version>2.10.13</joda-time.version>
         <mapdb.version>3.0.8</mapdb.version>
