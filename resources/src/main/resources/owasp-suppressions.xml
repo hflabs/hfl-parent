@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+    <suppress>
+        <notes><![CDATA[
+        This suppresses false positives identified on logback-ext-spring.
+        ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.logback-extensions/logback-ext-spring@.*$</packageUrl>
+        <vulnerabilityName>CVE-2017-5929</vulnerabilityName>
+        <vulnerabilityName>CVE-2021-42550</vulnerabilityName>
+    </suppress>
+</suppressions>
