@@ -8,4 +8,35 @@
         <vulnerabilityName>CVE-2017-5929</vulnerabilityName>
         <vulnerabilityName>CVE-2021-42550</vulnerabilityName>
     </suppress>
+    <suppress>
+        <notes><![CDATA[
+        This suppresses false positives identified on rxjava (with docker).
+        ]]></notes>
+        <packageUrl regex="true">^pkg:maven/io\.reactivex/rxjava@1\..*$</packageUrl>
+        <vulnerabilityName>CVE-2014-0047</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-0048</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-5277</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-5278</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-5282</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-6407</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-8178</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-8179</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-9356</vulnerabilityName>
+        <vulnerabilityName>CVE-2014-9358</vulnerabilityName>
+        <vulnerabilityName>CVE-2015-3627</vulnerabilityName>
+        <vulnerabilityName>CVE-2015-3630</vulnerabilityName>
+        <vulnerabilityName>CVE-2015-3631</vulnerabilityName>
+        <vulnerabilityName>CVE-2016-3697</vulnerabilityName>
+        <vulnerabilityName>CVE-2017-14992</vulnerabilityName>
+        <vulnerabilityName>CVE-2019-13139</vulnerabilityName>
+        <vulnerabilityName>CVE-2019-13509</vulnerabilityName>
+        <vulnerabilityName>CVE-2019-15752</vulnerabilityName>
+        <vulnerabilityName>CVE-2019-16884</vulnerabilityName>
+        <vulnerabilityName>CVE-2019-5736</vulnerabilityName>
+        <vulnerabilityName>CVE-2020-27534</vulnerabilityName>
+        <vulnerabilityName>CVE-2021-21284</vulnerabilityName>
+        <vulnerabilityName>CVE-2021-21285</vulnerabilityName>
+        <vulnerabilityName>CVE-2021-3162</vulnerabilityName>
+        <vulnerabilityName>CVE-2022-25365</vulnerabilityName>
+    </suppress>
 </suppressions>
