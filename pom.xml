@@ -11,7 +11,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>22.1-SNAPSHOT</version>
+    <version>22.10-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -146,7 +146,7 @@
         <commons-lang.version>2.6</commons-lang.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <commons-digester.version>2.1</commons-digester.version>
-        <commons-text.version>1.9</commons-text.version>
+        <commons-text.version>1.10.0</commons-text.version>
 
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
@@ -489,7 +489,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>22.1-SNAPSHOT</version>
+                            <version>22.10-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
