@@ -100,6 +100,8 @@
         <!-- ############################################################################ -->
         <!-- Helpers & frameworks -->
         <!-- ############################################################################ -->
+        <!-- override spring from bom (fix CVE-2023-20860) -->
+        <spring-framework.version>5.3.26</spring-framework.version>
         <!-- workaround for bug in WF https://github.com/wildfly/jandex/issues/147 -->
         <guava.version>30.1.1-jre</guava.version>
         <streamex.version>0.8.1</streamex.version>
