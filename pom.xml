@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.7.9</version>
+        <version>2.7.11</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>23.2-SNAPSHOT</version>
+    <version>23.3-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -55,7 +55,7 @@
         <j2se.debug>true</j2se.debug>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.version>3.6.3</maven.build.version>
-        <maven.build.version.max.excluded/>
+        <maven.build.version.max.excluded />
         <maven.build.timestamp.format>yyyy-MM-dd_HH.mm.ss</maven.build.timestamp.format>
         <maven.build.settingsFile>${user.home}/.m2/settings.xml</maven.build.settingsFile>
 
@@ -288,7 +288,7 @@
                                         <version>[${j2se.version},)</version>
                                     </requireJavaVersion>
                                     <!-- use it when upgrading versions for check dependency conflicts -->
-                                    <dependencyConvergence/>
+                                    <dependencyConvergence />
                                 </rules>
                             </configuration>
                         </execution>
@@ -488,7 +488,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>23.2-SNAPSHOT</version>
+                            <version>23.3-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
