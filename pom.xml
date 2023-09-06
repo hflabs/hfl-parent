@@ -53,6 +53,7 @@
         <!-- ############################################################################ -->
         <j2se.version>17</j2se.version>
         <j2se.debug>true</j2se.debug>
+        <j2se.parameters>false</j2se.parameters>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.version>3.6.3</maven.build.version>
         <maven.build.version.max.excluded />
@@ -332,6 +333,7 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <optimize>true</optimize>
                         <debug>${j2se.debug}</debug>
+                        <parameters>${j2se.parameters}</parameters>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
                         <fork>${maven.compiler.fork}</fork>
