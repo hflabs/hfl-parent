@@ -6,7 +6,7 @@
     <parent>
         <groupId>ru.hflabs</groupId>
         <artifactId>parent</artifactId>
-        <version>23.8.jdk17-SNAPSHOT</version>
+        <version>23.12.jdk17-SNAPSHOT</version>
     </parent>
 
     <artifactId>parent-resources</artifactId>
