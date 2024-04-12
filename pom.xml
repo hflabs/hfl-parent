@@ -11,7 +11,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>24.4-SNAPSHOT</version>
+    <version>24.4.1-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -234,7 +234,7 @@
         <!-- ############################################################################ -->
         <!-- Distributed collections versions -->
         <!-- ############################################################################ -->
-        <lucene.version>9.7.0</lucene.version>
+        <lucene.version>9.10.0</lucene.version>
 
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
@@ -486,7 +486,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>24.4-SNAPSHOT</version>
+                             <version>24.4.1-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
