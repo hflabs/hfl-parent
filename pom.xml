@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.2.4</version>
+        <version>3.3.1</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>24.4-SNAPSHOT</version>
+    <version>24.7-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -101,20 +101,18 @@
         <!-- ############################################################################ -->
         <!-- Helpers & frameworks -->
         <!-- ############################################################################ -->
-        <guava.version>33.0.0-jre</guava.version>
+        <guava.version>33.2.1-jre</guava.version>
         <streamex.version>0.8.2</streamex.version>
         <joda-time.version>2.12.7</joda-time.version>
         <mapdb.version>3.1.0</mapdb.version>
-        <trove.version>3.0.3</trove.version>
-        <jsch.version>0.1.55</jsch.version>
-        <jcifs.version>1.3.17</jcifs.version>
-        <juniversalchardet.version>2.4.0</juniversalchardet.version>
+        <trove.version>3.1.0</trove.version>
+        <juniversalchardet.version>2.5.0</juniversalchardet.version>
         <zip4j.version>2.11.5</zip4j.version>
 
         <!-- ############################################################################ -->
         <!-- Meters & system information -->
         <!-- ############################################################################ -->
-        <oshi.version>6.4.13</oshi.version>
+        <oshi.version>6.6.1</oshi.version>
         <micrometer-jvm-extras.version>0.2.2</micrometer-jvm-extras.version>
 
         <!-- ############################################################################ -->
@@ -127,6 +125,7 @@
         <!-- Compression&Serialization versions -->
         <!-- ############################################################################ -->
         <compress-lzf.version>1.1.2</compress-lzf.version>
+        <lz4.version>1.8.0</lz4.version>
 
         <!-- ############################################################################ -->
         <!-- Security versions -->
@@ -142,14 +141,13 @@
         <!-- ############################################################################ -->
         <!-- Apache commons version -->
         <!-- ############################################################################ -->
-        <commons-cli.version>1.6.0</commons-cli.version>
-        <commons-compress.version>1.26.0</commons-compress.version>
-        <commons-configuration.version>1.10</commons-configuration.version>
-        <commons-io.version>2.15.1</commons-io.version>
+        <commons-cli.version>1.8.0</commons-cli.version>
+        <commons-compress.version>1.26.2</commons-compress.version>
+        <commons-io.version>2.16.1</commons-io.version>
         <commons-lang.version>2.6</commons-lang.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <commons-digester.version>2.1</commons-digester.version>
-        <commons-text.version>1.11.0</commons-text.version>
+        <commons-text.version>1.12.0</commons-text.version>
 
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
@@ -165,44 +163,32 @@
 
         <mariadb.groupId>org.mariadb.jdbc</mariadb.groupId>
         <mariadb.artifactId>mariadb-java-client</mariadb.artifactId>
-        <mariadb.version>3.3.3</mariadb.version>
+        <mariadb.version>3.4.0</mariadb.version>
         <mariadb.driverClassName>org.mariadb.jdbc.Driver</mariadb.driverClassName>
         <mariadb.validateQuery>SELECT 1</mariadb.validateQuery>
 
         <mysql.groupId>com.mysql</mysql.groupId>
         <mysql.artifactId>mysql-connector-j</mysql.artifactId>
-        <mysql.version>8.3.0</mysql.version>
+        <mysql.version>8.4.0</mysql.version>
         <mysql.driverClassName>com.mysql.jdbc.Driver</mysql.driverClassName>
         <mysql.validateQuery>SELECT 1</mysql.validateQuery>
 
         <mssql.groupId>com.microsoft.sqlserver</mssql.groupId>
         <mssql.artifactId>mssql-jdbc</mssql.artifactId>
-        <mssql.version>12.6.1.jre11</mssql.version>
+        <mssql.version>12.6.3.jre11</mssql.version>
         <mssql-jdbc.version>${mssql.version}</mssql-jdbc.version>
         <mssql.driverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</mssql.driverClassName>
         <mssql.validateQuery>SELECT 1</mssql.validateQuery>
 
-        <sybase.groupId>net.sourceforge.jtds</sybase.groupId>
-        <sybase.artifactId>jtds</sybase.artifactId>
-        <sybase.version>1.3.1</sybase.version>
-        <sybase.driverClassName>net.sourceforge.jtds.jdbc.Driver</sybase.driverClassName>
-        <sybase.validateQuery>SELECT 1</sybase.validateQuery>
-
-        <vertica.groupId>com.vertica</vertica.groupId>
-        <vertica.artifactId>vertica-jdbc</vertica.artifactId>
-        <vertica.version>6.1.2</vertica.version>
-        <vertica.driverClassName>com.vertica.jdbc.Driver</vertica.driverClassName>
-        <vertica.validateQuery>SELECT 1</vertica.validateQuery>
-
         <postgresql.groupId>org.postgresql</postgresql.groupId>
         <postgresql.artifactId>postgresql</postgresql.artifactId>
-        <postgresql.version>42.7.2</postgresql.version>
+        <postgresql.version>42.7.3</postgresql.version>
         <postgresql.driverClassName>org.postgresql.Driver</postgresql.driverClassName>
         <postgresql.validateQuery>SELECT 1</postgresql.validateQuery>
 
         <hsqldb.groupId>org.hsqldb</hsqldb.groupId>
         <hsqldb.artifactId>hsqldb</hsqldb.artifactId>
-        <hsqldb.version>2.7.2</hsqldb.version>
+        <hsqldb.version>2.7.3</hsqldb.version>
         <hsqldb.driverClassName>org.hsqldb.jdbc.JDBCDriver</hsqldb.driverClassName>
         <hsqldb.validateQuery>SELECT 1 FROM INFORMATION_SCHEMA.SYSTEM_USERS</hsqldb.validateQuery>
 
@@ -212,13 +198,13 @@
         <h2.driverClassName>org.h2.Driver</h2.driverClassName>
         <h2.validateQuery>SELECT 1</h2.validateQuery>
 
-        <dbf.groupId>com.linuxense</dbf.groupId>
+        <dbf.groupId>com.github.albfernandez</dbf.groupId>
         <dbf.artifactId>javadbf</dbf.artifactId>
-        <dbf.version>0.4.0</dbf.version>
+        <dbf.version>1.14.1</dbf.version>
 
         <mongodb.groupId>org.mongodb</mongodb.groupId>
         <mongodb.artifactId>mongodb-driver-sync</mongodb.artifactId>
-        <mongodb.version>5.0.0</mongodb.version>
+        <mongodb.version>5.1.1</mongodb.version>
 
         <!-- ############################################################################ -->
         <!-- SOAP & REST versions -->
@@ -234,13 +220,12 @@
         <!-- ############################################################################ -->
         <!-- Distributed collections versions -->
         <!-- ############################################################################ -->
-        <lucene.version>9.7.0</lucene.version>
+        <lucene.version>9.11.1</lucene.version>
 
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
         <!-- ############################################################################ -->
-        <jsoup.version>1.16.1</jsoup.version>
-        <tiles.version>3.0.8</tiles.version>
+        <jsoup.version>1.17.2</jsoup.version>
 
         <!-- ############################################################################ -->
         <!-- Jakarta (aka javax) specifications libraries version -->
@@ -252,9 +237,9 @@
         <!-- ############################################################################ -->
         <!-- Test frameworks version -->
         <!-- ############################################################################ -->
-        <testng.version>7.9.0</testng.version>
-        <dbunit.version>2.7.3</dbunit.version>
-        <wiremock.version>2.27.2</wiremock.version>
+        <testng.version>7.10.2</testng.version>
+        <dbunit.version>2.8.0</dbunit.version>
+        <wiremock.version>2.35.2</wiremock.version>
 
     </properties>
 
@@ -301,12 +286,6 @@
                         <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
                         <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
                     </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.jboss.maven.plugins</groupId>
-                    <artifactId>maven-injection-plugin</artifactId>
-                    <version>1.0.2</version>
                 </plugin>
 
                 <plugin>
@@ -373,7 +352,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-remote-resources-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.0</version>
                 </plugin>
 
                 <plugin>
@@ -481,12 +460,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>3.4.0</version>
                     <dependencies>
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>24.4-SNAPSHOT</version>
+                            <version>24.7-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -510,13 +489,13 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>sql-maven-plugin</artifactId>
-                    <version>1.5</version>
+                    <version>3.0.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.1.0</version>
                     <configuration>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <updateDependencies>false</updateDependencies>
@@ -621,6 +600,12 @@
                 <version>${cglib.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>net.java.dev.jna</groupId>
+                <artifactId>jna</artifactId>
+                <version>${jna.version}</version>
+            </dependency>
+
             <!-- Helpers & frameworks -->
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -648,26 +633,14 @@
 
             <dependency>
                 <groupId>net.sf.trove4j</groupId>
-                <artifactId>trove4j</artifactId>
+                <artifactId>core</artifactId>
                 <version>${trove.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.jcraft</groupId>
-                <artifactId>jsch</artifactId>
-                <version>${jsch.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>jcifs</groupId>
-                <artifactId>jcifs</artifactId>
-                <version>${jcifs.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.servlet</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                </exclusions>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${jsoup.version}</version>
             </dependency>
 
             <dependency>
@@ -721,6 +694,19 @@
                 <version>${compress-lzf.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.lz4</groupId>
+                <artifactId>lz4-java</artifactId>
+                <version>${lz4.version}</version>
+            </dependency>
+
+            <!-- Security -->
+            <dependency>
+                <groupId>com.lambdaworks</groupId>
+                <artifactId>scrypt</artifactId>
+                <version>${lambdaworks.scrypt.version}</version>
+            </dependency>
+
             <!-- Apache ANT -->
             <dependency>
                 <groupId>org.apache.ant</groupId>
@@ -739,12 +725,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
                 <version>${commons-compress.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-configuration</groupId>
-                <artifactId>commons-configuration</artifactId>
-                <version>${commons-configuration.version}</version>
             </dependency>
 
             <dependency>
@@ -867,18 +847,6 @@
             </dependency>
 
             <dependency>
-                <groupId>${sybase.groupId}</groupId>
-                <artifactId>${sybase.artifactId}</artifactId>
-                <version>${sybase.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>${vertica.groupId}</groupId>
-                <artifactId>${vertica.artifactId}</artifactId>
-                <version>${vertica.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>${postgresql.groupId}</groupId>
                 <artifactId>${postgresql.artifactId}</artifactId>
                 <version>${postgresql.version}</version>
@@ -933,6 +901,18 @@
                     <exclusion>
                         <groupId>junit</groupId>
                         <artifactId>junit</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock-jre8</artifactId>
+                <version>${wiremock.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>*</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
