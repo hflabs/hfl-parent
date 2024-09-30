@@ -113,6 +113,8 @@
         <!-- Meters & system information -->
         <!-- ############################################################################ -->
         <oshi.version>6.6.1</oshi.version>
+        <!-- override to fix https://github.com/micrometer-metrics/micrometer/issues/5193 -->
+        <micrometer.version>1.13.4</micrometer.version>
         <micrometer-jvm-extras.version>0.2.2</micrometer-jvm-extras.version>
 
         <!-- ############################################################################ -->
