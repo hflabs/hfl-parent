@@ -87,6 +87,7 @@
         <maven.test.jpda>5010</maven.test.jpda>
         <maven.checkstyle.skip>true</maven.checkstyle.skip>
         <maven.checkstyle.suppressionsLocation />
+        <maven.dependencyVulnerabilities.skip>true</maven.dependencyVulnerabilities.skip>
         <maven.war.exploded.extension>exploded.war</maven.war.exploded.extension>
         <maven.war.exploded>${project.build.finalName}_${maven.war.exploded.extension}</maven.war.exploded>
         <maven.compiler.fork>true</maven.compiler.fork>
@@ -486,6 +487,34 @@
                         <linkXRef>false</linkXRef>
                         <suppressionsLocation>${maven.checkstyle.suppressionsLocation}</suppressionsLocation>
                     </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <version>11.1.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>ru.hflabs</groupId>
+                            <artifactId>parent-resources</artifactId>
+                            <version>24.7-SNAPSHOT</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <skip>${maven.dependencyVulnerabilities.skip}</skip>
+                        <failBuildOnCVSS>9</failBuildOnCVSS>
+                        <cveValidForHours>12</cveValidForHours>
+                        <format>HTML</format>
+                        <suppressionFile>owasp-suppressions.xml</suppressionFile>
+                        <nvdApiKeyEnvironmentVariable>NDV_API_KEY</nvdApiKeyEnvironmentVariable>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <plugin>
