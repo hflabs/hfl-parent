@@ -503,7 +503,7 @@
                     <configuration>
                         <skip>${maven.dependencyVulnerabilities.skip}</skip>
                         <failBuildOnCVSS>9</failBuildOnCVSS>
-                        <cveValidForHours>12</cveValidForHours>
+                        <nvdValidForHours>12</nvdValidForHours>
                         <format>HTML</format>
                         <suppressionFile>owasp-suppressions.xml</suppressionFile>
                         <nvdApiKeyEnvironmentVariable>NDV_API_KEY</nvdApiKeyEnvironmentVariable>
