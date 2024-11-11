@@ -87,10 +87,13 @@
         <maven.test.jpda>5010</maven.test.jpda>
         <maven.checkstyle.skip>true</maven.checkstyle.skip>
         <maven.checkstyle.suppressionsLocation />
+        <maven.checkstyle.consoleOutput>true</maven.checkstyle.consoleOutput>
         <maven.dependencyVulnerabilities.skip>true</maven.dependencyVulnerabilities.skip>
+        <maven.dependencyVulnerabilities.suppressionFile/>
         <maven.war.exploded.extension>exploded.war</maven.war.exploded.extension>
         <maven.war.exploded>${project.build.finalName}_${maven.war.exploded.extension}</maven.war.exploded>
         <maven.compiler.fork>true</maven.compiler.fork>
+        <maven.source.skip>false</maven.source.skip>
 
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
@@ -378,6 +381,7 @@
                             </goals>
                             <configuration>
                                 <attach>true</attach>
+                                <skipSource>${maven.source.skip}</skipSource>
                             </configuration>
                         </execution>
                     </executions>
@@ -486,6 +490,7 @@
                         <failsOnError>true</failsOnError>
                         <linkXRef>false</linkXRef>
                         <suppressionsLocation>${maven.checkstyle.suppressionsLocation}</suppressionsLocation>
+                        <consoleOutput>${maven.checkstyle.consoleOutput}</consoleOutput>
                     </configuration>
                 </plugin>
 
@@ -505,7 +510,10 @@
                         <failBuildOnCVSS>9</failBuildOnCVSS>
                         <nvdValidForHours>12</nvdValidForHours>
                         <format>HTML</format>
-                        <suppressionFile>owasp-suppressions.xml</suppressionFile>
+                        <suppressionFiles>
+                            <suppressionFile>owasp-suppressions.xml</suppressionFile>
+                            <suppressionFile>${maven.dependencyVulnerabilities.suppressionFile}</suppressionFile>
+                        </suppressionFiles>
                         <nvdApiKeyEnvironmentVariable>NDV_API_KEY</nvdApiKeyEnvironmentVariable>
                     </configuration>
                     <executions>
