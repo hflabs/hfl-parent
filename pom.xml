@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.6</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>24.7-SNAPSHOT</version>
+    <version>24.11-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -472,7 +472,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>24.7-SNAPSHOT</version>
+                            <version>24.11-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -502,7 +502,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>24.7-SNAPSHOT</version>
+                            <version>24.11-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <configuration>
