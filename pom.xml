@@ -11,7 +11,7 @@
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>24.11-SNAPSHOT</version>
+    <version>25.1-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -51,7 +51,7 @@
         <!-- ############################################################################ -->
         <!-- Build properties -->
         <!-- ############################################################################ -->
-        <j2se.version>17</j2se.version>
+        <j2se.version>21</j2se.version>
         <j2se.debug>true</j2se.debug>
         <j2se.parameters>true</j2se.parameters>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -158,8 +158,7 @@
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
         <!-- ############################################################################ -->
-        <!-- Версию flyway не повышаем, потому что с 5й версии поддержка старых версий БД стала платной (оракл 11 и тп) -->
-        <flyway.version>4.2.0</flyway.version>
+        <flyway.version>11.2.0</flyway.version>
 
         <oracle.groupId>com.oracle</oracle.groupId>
         <oracle.artifactId>ojdbc7</oracle.artifactId>
