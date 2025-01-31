@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.3.6</version>
+        <version>3.4.2</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>25.1-SNAPSHOT</version>
+    <version>25.2-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -98,16 +98,16 @@
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
         <!-- ############################################################################ -->
-        <jna.version>5.14.0</jna.version>
+        <jna.version>5.16.0</jna.version>
         <mvel2.version>2.5.2.Final</mvel2.version>
         <cglib.version>3.3.0</cglib.version>
 
         <!-- ############################################################################ -->
         <!-- Helpers & frameworks -->
         <!-- ############################################################################ -->
-        <guava.version>33.2.1-jre</guava.version>
-        <streamex.version>0.8.2</streamex.version>
-        <joda-time.version>2.12.7</joda-time.version>
+        <guava.version>33.4.0-jre</guava.version>
+        <streamex.version>0.8.3</streamex.version>
+        <joda-time.version>2.13.0</joda-time.version>
         <mapdb.version>3.1.0</mapdb.version>
         <trove.version>3.1.0</trove.version>
         <juniversalchardet.version>2.5.0</juniversalchardet.version>
@@ -116,15 +116,13 @@
         <!-- ############################################################################ -->
         <!-- Meters & system information -->
         <!-- ############################################################################ -->
-        <oshi.version>6.6.1</oshi.version>
-        <!-- override to fix https://github.com/micrometer-metrics/micrometer/issues/5193 -->
-        <micrometer.version>1.13.4</micrometer.version>
+        <oshi.version>6.6.6</oshi.version>
         <micrometer-jvm-extras.version>0.2.2</micrometer-jvm-extras.version>
 
         <!-- ############################################################################ -->
         <!-- Mappings & parsers versions -->
         <!-- ############################################################################ -->
-        <poi.version>5.2.5</poi.version>
+        <poi.version>5.4.0</poi.version>
         <super-csv.version>2.4.0</super-csv.version>
 
         <!-- ############################################################################ -->
@@ -141,25 +139,23 @@
         <!-- ############################################################################ -->
         <!-- ANT versions -->
         <!-- ############################################################################ -->
-        <ant.version>1.10.14</ant.version>
+        <ant.version>1.10.15</ant.version>
         <ant-contrib.version>1.0b3</ant-contrib.version>
 
         <!-- ############################################################################ -->
         <!-- Apache commons version -->
         <!-- ############################################################################ -->
-        <commons-cli.version>1.8.0</commons-cli.version>
-        <commons-compress.version>1.26.2</commons-compress.version>
-        <commons-io.version>2.16.1</commons-io.version>
+        <commons-cli.version>1.9.0</commons-cli.version>
+        <commons-compress.version>1.27.1</commons-compress.version>
+        <commons-io.version>2.18.0</commons-io.version>
         <commons-lang.version>2.6</commons-lang.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <commons-digester.version>2.1</commons-digester.version>
-        <commons-text.version>1.12.0</commons-text.version>
+        <commons-text.version>1.13.0</commons-text.version>
 
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
         <!-- ############################################################################ -->
-        <flyway.version>10.20.1</flyway.version>
-
         <oracle.groupId>com.oracle</oracle.groupId>
         <oracle.artifactId>ojdbc7</oracle.artifactId>
         <oracle.version>12.1.0.2</oracle.version>
@@ -168,35 +164,36 @@
 
         <mariadb.groupId>org.mariadb.jdbc</mariadb.groupId>
         <mariadb.artifactId>mariadb-java-client</mariadb.artifactId>
-        <mariadb.version>3.4.0</mariadb.version>
+        <mariadb.version>3.5.1</mariadb.version>
         <mariadb.driverClassName>org.mariadb.jdbc.Driver</mariadb.driverClassName>
         <mariadb.validateQuery>SELECT 1</mariadb.validateQuery>
 
         <mysql.groupId>com.mysql</mysql.groupId>
         <mysql.artifactId>mysql-connector-j</mysql.artifactId>
-        <mysql.version>8.4.0</mysql.version>
+        <mysql.version>9.2.0</mysql.version>
         <mysql.driverClassName>com.mysql.jdbc.Driver</mysql.driverClassName>
         <mysql.validateQuery>SELECT 1</mysql.validateQuery>
 
         <mssql.groupId>com.microsoft.sqlserver</mssql.groupId>
         <mssql.artifactId>mssql-jdbc</mssql.artifactId>
-        <mssql.version>12.6.3.jre11</mssql.version>
+        <mssql.version>12.8.1.jre11</mssql.version>
         <mssql-jdbc.version>${mssql.version}</mssql-jdbc.version>
         <mssql.driverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</mssql.driverClassName>
         <mssql.validateQuery>SELECT 1</mssql.validateQuery>
 
         <postgresql.groupId>org.postgresql</postgresql.groupId>
         <postgresql.artifactId>postgresql</postgresql.artifactId>
-        <postgresql.version>42.7.3</postgresql.version>
+        <postgresql.version>42.7.5</postgresql.version>
         <postgresql.driverClassName>org.postgresql.Driver</postgresql.driverClassName>
         <postgresql.validateQuery>SELECT 1</postgresql.validateQuery>
 
         <hsqldb.groupId>org.hsqldb</hsqldb.groupId>
         <hsqldb.artifactId>hsqldb</hsqldb.artifactId>
-        <hsqldb.version>2.7.3</hsqldb.version>
+        <hsqldb.version>2.7.4</hsqldb.version>
         <hsqldb.driverClassName>org.hsqldb.jdbc.JDBCDriver</hsqldb.driverClassName>
         <hsqldb.validateQuery>SELECT 1 FROM INFORMATION_SCHEMA.SYSTEM_USERS</hsqldb.validateQuery>
 
+        <!-- next version is not backward compatibility -->
         <h2.groupId>com.h2database</h2.groupId>
         <h2.artifactId>h2</h2.artifactId>
         <h2.version>2.1.214</h2.version>
@@ -209,13 +206,13 @@
 
         <mongodb.groupId>org.mongodb</mongodb.groupId>
         <mongodb.artifactId>mongodb-driver-sync</mongodb.artifactId>
-        <mongodb.version>5.1.1</mongodb.version>
+        <mongodb.version>5.3.1</mongodb.version>
 
         <!-- ############################################################################ -->
         <!-- SOAP & REST versions -->
         <!-- ############################################################################ -->
-        <cxf.version>4.0.5</cxf.version>
-        <cxf-xjc.version>4.0.0</cxf-xjc.version>
+        <cxf.version>4.1.0</cxf.version>
+        <cxf-xjc.version>4.1.0</cxf-xjc.version>
 
         <!-- Jaxb versions -->
         <jaxb2.version>0.13.1</jaxb2.version>
@@ -225,12 +222,12 @@
         <!-- ############################################################################ -->
         <!-- Distributed collections versions -->
         <!-- ############################################################################ -->
-        <lucene.version>9.11.1</lucene.version>
+        <lucene.version>9.12.1</lucene.version>
 
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
         <!-- ############################################################################ -->
-        <jsoup.version>1.17.2</jsoup.version>
+        <jsoup.version>1.18.3</jsoup.version>
 
         <!-- ############################################################################ -->
         <!-- Jakarta (aka javax) specifications libraries version -->
@@ -243,7 +240,7 @@
         <!-- Test frameworks version -->
         <!-- ############################################################################ -->
         <testng.version>7.10.2</testng.version>
-        <dbunit.version>2.8.0</dbunit.version>
+        <dbunit.version>3.0.0</dbunit.version>
         <wiremock.version>2.35.2</wiremock.version>
 
     </properties>
@@ -286,7 +283,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.1</version>
                     <configuration>
                         <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
                         <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
@@ -357,7 +354,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-remote-resources-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.3.0</version>
                 </plugin>
 
                 <plugin>
@@ -466,12 +463,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.4.0</version>
+                    <version>3.6.0</version>
                     <dependencies>
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>24.11-SNAPSHOT</version>
+                            <version>25.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -496,12 +493,12 @@
                 <plugin>
                     <groupId>org.owasp</groupId>
                     <artifactId>dependency-check-maven</artifactId>
-                    <version>11.1.0</version>
+                    <version>12.0.2</version>
                     <dependencies>
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>24.11-SNAPSHOT</version>
+                            <version>25.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <configuration>
@@ -533,7 +530,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.1.1</version>
                     <configuration>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <updateDependencies>false</updateDependencies>
@@ -543,7 +540,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-archetype-plugin</artifactId>
-                    <version>3.2.1</version>
+                    <version>3.3.1</version>
                     <configuration>
                         <settingsFile>${maven.build.settingsFile}</settingsFile>
                     </configuration>
