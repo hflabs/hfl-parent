@@ -158,7 +158,7 @@
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
         <!-- ############################################################################ -->
-        <flyway.version>11.2.0</flyway.version>
+        <flyway.version>10.10.0</flyway.version>
 
         <oracle.groupId>com.oracle</oracle.groupId>
         <oracle.artifactId>ojdbc7</oracle.artifactId>
