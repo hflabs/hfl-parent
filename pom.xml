@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.4.2</version>
+        <version>3.5.4</version>
     </parent>
 
     <groupId>ru.hflabs</groupId>
     <artifactId>parent</artifactId>
-    <version>25.2-SNAPSHOT</version>
+    <version>25.3-SNAPSHOT</version>
 
     <name>HFLabs Parent POM</name>
     <description>Корневой POM, описывающий версии используемых плагинов и библиотек</description>
@@ -85,7 +85,7 @@
         <maven.test.skip>${skipTests}</maven.test.skip>
         <maven.test.debug>n</maven.test.debug>
         <maven.test.jpda>5010</maven.test.jpda>
-        <maven.checkstyle.skip>true</maven.checkstyle.skip>
+        <maven.checkstyle.skip>false</maven.checkstyle.skip>
         <maven.checkstyle.suppressionsLocation />
         <maven.checkstyle.consoleOutput>true</maven.checkstyle.consoleOutput>
         <maven.dependencyVulnerabilities.skip>true</maven.dependencyVulnerabilities.skip>
@@ -98,31 +98,34 @@
         <!-- ############################################################################ -->
         <!-- Aspect&ByteCode libraries versions -->
         <!-- ############################################################################ -->
-        <jna.version>5.16.0</jna.version>
+        <jna.version>5.17.0</jna.version>
         <mvel2.version>2.5.2.Final</mvel2.version>
         <cglib.version>3.3.0</cglib.version>
 
         <!-- ############################################################################ -->
         <!-- Helpers & frameworks -->
         <!-- ############################################################################ -->
-        <guava.version>33.4.0-jre</guava.version>
+        <guava.version>33.4.8-jre</guava.version>
         <streamex.version>0.8.3</streamex.version>
-        <joda-time.version>2.13.0</joda-time.version>
+        <joda-time.version>2.14.0</joda-time.version>
         <mapdb.version>3.1.0</mapdb.version>
         <trove.version>3.1.0</trove.version>
         <juniversalchardet.version>2.5.0</juniversalchardet.version>
         <zip4j.version>2.11.5</zip4j.version>
+        <hypersistence-utils.version>3.10.3</hypersistence-utils.version>
+        <checker-qual.version>3.49.5</checker-qual.version>
+        <error-prone-annotations.version>2.41.0</error-prone-annotations.version>
 
         <!-- ############################################################################ -->
         <!-- Meters & system information -->
         <!-- ############################################################################ -->
-        <oshi.version>6.6.6</oshi.version>
+        <oshi.version>6.8.2</oshi.version>
         <micrometer-jvm-extras.version>0.2.2</micrometer-jvm-extras.version>
 
         <!-- ############################################################################ -->
         <!-- Mappings & parsers versions -->
         <!-- ############################################################################ -->
-        <poi.version>5.4.0</poi.version>
+        <poi.version>5.4.1</poi.version>
         <super-csv.version>2.4.0</super-csv.version>
 
         <!-- ############################################################################ -->
@@ -132,26 +135,15 @@
         <lz4.version>1.8.0</lz4.version>
 
         <!-- ############################################################################ -->
-        <!-- Security versions -->
-        <!-- ############################################################################ -->
-        <lambdaworks.scrypt.version>1.4.0</lambdaworks.scrypt.version>
-
-        <!-- ############################################################################ -->
-        <!-- ANT versions -->
-        <!-- ############################################################################ -->
-        <ant.version>1.10.15</ant.version>
-        <ant-contrib.version>1.0b3</ant-contrib.version>
-
-        <!-- ############################################################################ -->
         <!-- Apache commons version -->
         <!-- ############################################################################ -->
         <commons-cli.version>1.9.0</commons-cli.version>
         <commons-compress.version>1.27.1</commons-compress.version>
-        <commons-io.version>2.18.0</commons-io.version>
+        <commons-io.version>2.20.0</commons-io.version>
         <commons-lang.version>2.6</commons-lang.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <commons-digester.version>2.1</commons-digester.version>
-        <commons-text.version>1.13.0</commons-text.version>
+        <commons-text.version>1.14.0</commons-text.version>
 
         <!-- ############################################################################ -->
         <!-- Storage libraries versions -->
@@ -164,26 +156,26 @@
 
         <mariadb.groupId>org.mariadb.jdbc</mariadb.groupId>
         <mariadb.artifactId>mariadb-java-client</mariadb.artifactId>
-        <mariadb.version>3.5.1</mariadb.version>
+        <mariadb.version>3.5.4</mariadb.version>
         <mariadb.driverClassName>org.mariadb.jdbc.Driver</mariadb.driverClassName>
         <mariadb.validateQuery>SELECT 1</mariadb.validateQuery>
 
         <mysql.groupId>com.mysql</mysql.groupId>
         <mysql.artifactId>mysql-connector-j</mysql.artifactId>
-        <mysql.version>9.2.0</mysql.version>
+        <mysql.version>9.3.0</mysql.version>
         <mysql.driverClassName>com.mysql.jdbc.Driver</mysql.driverClassName>
         <mysql.validateQuery>SELECT 1</mysql.validateQuery>
 
         <mssql.groupId>com.microsoft.sqlserver</mssql.groupId>
         <mssql.artifactId>mssql-jdbc</mssql.artifactId>
-        <mssql.version>12.8.1.jre11</mssql.version>
+        <mssql.version>12.10.1.jre11</mssql.version>
         <mssql-jdbc.version>${mssql.version}</mssql-jdbc.version>
         <mssql.driverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</mssql.driverClassName>
         <mssql.validateQuery>SELECT 1</mssql.validateQuery>
 
         <postgresql.groupId>org.postgresql</postgresql.groupId>
         <postgresql.artifactId>postgresql</postgresql.artifactId>
-        <postgresql.version>42.7.5</postgresql.version>
+        <postgresql.version>42.7.7</postgresql.version>
         <postgresql.driverClassName>org.postgresql.Driver</postgresql.driverClassName>
         <postgresql.validateQuery>SELECT 1</postgresql.validateQuery>
 
@@ -206,13 +198,15 @@
 
         <mongodb.groupId>org.mongodb</mongodb.groupId>
         <mongodb.artifactId>mongodb-driver-sync</mongodb.artifactId>
-        <mongodb.version>5.3.1</mongodb.version>
+        <mongodb.version>5.5.1</mongodb.version>
 
         <!-- ############################################################################ -->
         <!-- SOAP & REST versions -->
         <!-- ############################################################################ -->
-        <cxf.version>4.1.0</cxf.version>
+        <cxf.version>4.1.2</cxf.version>
         <cxf-xjc.version>4.1.0</cxf-xjc.version>
+        <springdoc-openapi-starter.version>2.8.5</springdoc-openapi-starter.version>
+        <swagger.version>2.2.34</swagger.version>
 
         <!-- Jaxb versions -->
         <jaxb2.version>0.13.1</jaxb2.version>
@@ -222,12 +216,12 @@
         <!-- ############################################################################ -->
         <!-- Distributed collections versions -->
         <!-- ############################################################################ -->
-        <lucene.version>9.12.1</lucene.version>
+        <lucene.version>9.12.2</lucene.version>
 
         <!-- ############################################################################ -->
         <!-- Web frameworks version -->
         <!-- ############################################################################ -->
-        <jsoup.version>1.18.3</jsoup.version>
+        <jsoup.version>1.21.1</jsoup.version>
 
         <!-- ############################################################################ -->
         <!-- Jakarta (aka javax) specifications libraries version -->
@@ -239,9 +233,9 @@
         <!-- ############################################################################ -->
         <!-- Test frameworks version -->
         <!-- ############################################################################ -->
-        <testng.version>7.10.2</testng.version>
+        <testng.version>7.11.0</testng.version>
         <dbunit.version>3.0.0</dbunit.version>
-        <wiremock.version>2.35.2</wiremock.version>
+        <wiremock.version>3.13.1</wiremock.version>
 
     </properties>
 
@@ -468,7 +462,7 @@
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>25.2-SNAPSHOT</version>
+                            <version>25.3-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -493,12 +487,12 @@
                 <plugin>
                     <groupId>org.owasp</groupId>
                     <artifactId>dependency-check-maven</artifactId>
-                    <version>12.1.0</version>
+                    <version>12.1.3</version>
                     <dependencies>
                         <dependency>
                             <groupId>ru.hflabs</groupId>
                             <artifactId>parent-resources</artifactId>
-                            <version>25.2-SNAPSHOT</version>
+                            <version>25.3-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <configuration>
@@ -540,7 +534,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-archetype-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>3.4.0</version>
                     <configuration>
                         <settingsFile>${maven.build.settingsFile}</settingsFile>
                     </configuration>
@@ -550,6 +544,32 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>cobertura-maven-plugin</artifactId>
                     <version>2.7</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>1.1.0</version>
+                    <configuration>
+                        <updatePomFile>true</updatePomFile>
+                        <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>flatten</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>flatten</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>flatten.clean</id>
+                            <phase>clean</phase>
+                            <goals>
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
 
             </plugins>
@@ -690,6 +710,25 @@
                 <version>${zip4j.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.hypersistence</groupId>
+                <artifactId>hypersistence-utils-hibernate-63</artifactId>
+                <version>${hypersistence-utils.version}</version>
+            </dependency>
+
+            <!-- Указываем, поскольку часто транзитивно прилетают разные версии из разных либ -->
+            <dependency>
+                <groupId>org.checkerframework</groupId>
+                <artifactId>checker-qual</artifactId>
+                <version>${checker-qual.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_annotations</artifactId>
+                <version>${error-prone-annotations.version}</version>
+            </dependency>
+
             <!-- Meters & system information -->
             <dependency>
                 <groupId>com.github.oshi</groupId>
@@ -733,20 +772,6 @@
                 <groupId>org.lz4</groupId>
                 <artifactId>lz4-java</artifactId>
                 <version>${lz4.version}</version>
-            </dependency>
-
-            <!-- Security -->
-            <dependency>
-                <groupId>com.lambdaworks</groupId>
-                <artifactId>scrypt</artifactId>
-                <version>${lambdaworks.scrypt.version}</version>
-            </dependency>
-
-            <!-- Apache ANT -->
-            <dependency>
-                <groupId>org.apache.ant</groupId>
-                <artifactId>ant</artifactId>
-                <version>${ant.version}</version>
             </dependency>
 
             <!-- Apache commons libraries  -->
@@ -835,6 +860,19 @@
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-frontend-jaxrs</artifactId>
                 <version>${cxf.version}</version>
+            </dependency>
+
+            <!-- Open API and Swagger libraries -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc-openapi-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations-jakarta</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
 
             <!-- Jaxb -->
@@ -941,15 +979,9 @@
             </dependency>
 
             <dependency>
-                <groupId>com.github.tomakehurst</groupId>
-                <artifactId>wiremock-jre8</artifactId>
+                <groupId>org.wiremock</groupId>
+                <artifactId>wiremock</artifactId>
                 <version>${wiremock.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.servlet</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
         </dependencies>
